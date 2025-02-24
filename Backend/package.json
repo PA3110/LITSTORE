@@ -1,0 +1,22 @@
+{
+  "name": "litstore",
+  "version": "1.0.0",
+  "description": "mern project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PA3110/LITSTORE.git"
+  },
+  "author": "Prakriti Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PA3110/LITSTORE/issues"
+  },
+  "homepage": "https://github.com/PA3110/LITSTORE#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
