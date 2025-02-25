@@ -22,6 +22,11 @@ function Login() {
         console.log(res.data);
         if (res.data) {
           toast.success("LoggedIn Successfully");
+          document.getElementById("my_modal_3").close();
+          setTimeout(() => {
+            window.location.reload();
+            localStorage.setItem("Users", JSON.stringify(res.data.user));
+          }, 1000);
           // navigate(from, { replace: true });
         }
         localStorage.setItem("Users", JSON.stringify(res.data.user));
@@ -30,6 +35,7 @@ function Login() {
         if (err.response) {
           console.log(err);
           toast.error("Error: " + err.response.data.message);
+          setTimeout(() => {}, 2000);
         }
       });
   };
